@@ -11,8 +11,25 @@
 		<style>
 			body {
 				font-family: Lato;
+				background-color: bisque;
+			}
+
+			#candidates {
+				width: 80%;
+				height: 12px;
+				background: linear-gradient(
+					90deg,
+					rgba(0, 0, 255, 1) 0%,
+					rgba(255, 255, 255, 1) 50%,
+					rgba(255, 0, 0, 1) 100%
+				);
+				margin-top: 32px;
+				margin-left: 10%;
+				border-radius: 16px;
 			}
 		</style>
 	</head>
-	<body onLoad="load()"></body>
+	<body onLoad="load()">
+		<div id="candidates" />
+	</body>
 </html>
