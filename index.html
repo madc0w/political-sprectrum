@@ -14,7 +14,11 @@
 				background-color: bisque;
 			}
 
-			#candidates {
+			#results-container {
+				width: 80%;
+			}
+
+			#spectrum {
 				width: 80%;
 				height: 12px;
 				background: linear-gradient(
@@ -23,13 +27,33 @@
 					rgba(255, 255, 255, 1) 50%,
 					rgba(255, 0, 0, 1) 100%
 				);
+				position: absolute;
 				margin-top: 32px;
-				margin-left: 10%;
+				margin-left: 40px;
 				border-radius: 16px;
+			}
+
+			.candidate {
+				height: 24px;
+				background-color: #0002;
+				border-radius: 4px;
+				top: 26px;
+				position: absolute;
+				/* margin-left: 40px; */
+			}
+
+			.candidate.winner {
+				background-color: #ff08;
+				top: 20px;
 			}
 		</style>
 	</head>
 	<body onLoad="load()">
-		<div id="candidates" />
+		<div id="results-container">
+			<div id="spectrum" />
+			<div id="candidates"></div>
+			<!-- <div class="candidate" style="left: 0%; width: 100%"></div> -->
+			<!-- <div class="candidate" style="left: 10%; width: 10%"></div> -->
+		</div>
 	</body>
 </html>
